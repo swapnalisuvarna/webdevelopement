@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dentist Management System</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .services {
+            background-color: #f0f8ff;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading with Inline CSS -->
+    <h1 style="color: darkgreen; text-align:center;">
+        SmileCare Dental Clinic
+    </h1>
+
+    <h3 align="center">Complete Dentist Management System</h3>
+
+    <hr>
+
+    <!-- Navigation Links -->
+    <center>
+        <a href="#services">Services</a> |
+        <a href="#doctors">Doctors</a> |
+        <a href="#appointment">Book Appointment</a>
+    </center>
+
+    <hr>
+
+    <!-- Image -->
+    <center>
+        <a href="clinic.jpg">
+            <img src="clinic.jpg" width="400" height="250" alt="Dental Clinic">
+        </a>
+    </center>
+
+    <hr>
+
+    <!-- Services Section -->
+    <h2 id="services">Our Services</h2>
+
+    <div class="services">
+        <ul>
+            <li>Teeth Cleaning</li>
+            <li>Root Canal Treatment</li>
+            <li>Tooth Extraction</li>
+            <li>Braces & Aligners</li>
+        </ul>
+
+        <ol>
+            <li>Consultation</li>
+            <li>Diagnosis</li>
+            <li>Treatment</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <!-- Doctors Table -->
+    <h2 id="doctors">Doctor Details</h2>
+
+    <table>
+        <tr>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Experience</th>
+        </tr>
+        <tr>
+            <td>Dr. Mehta</td>
+            <td>Orthodontist</td>
+            <td>10 Years</td>
+        </tr>
+        <tr>
+            <td>Dr. Sharma</td>
+            <td>Endodontist</td>
+            <td>8 Years</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Appointment Form -->
+    <h2 id="appointment">Book Appointment</h2>
+
+    <form>
+        Patient Name:
+        <input type="text" name="name"><br><br>
+
+        Email:
+        <input type="email" name="email"><br><br>
+
+        Phone:
+        <input type="number" name="phone"><br><br>
+
+        Select Service:
+        <select>
+            <option>Teeth Cleaning</option>
+            <option>Root Canal</option>
+            <option>Braces</option>
+        </select><br><br>
+
+        Appointment Date:
+        <input type="date"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+
+    <!-- Frame using iframe -->
+    <h2>Clinic Location</h2>
+
+    <center>
+        <iframe src="https://www.gmail.com"
+                width="600"
+                height="300">
+        </iframe>
+    </center>
+
+    <hr>
+
+    <center>
+        <p>&copy; 2026 SmileCare Dental Clinic</p>
+    </center>
+
+</body>
+</html>
