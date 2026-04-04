@@ -9,8 +9,8 @@
     margin: 100px auto;
    text-align: center;
     background-color: bisque;
-    width:400px;
-    height: 400px;
+    width:400px auto;
+    height: 400px auto;
 }
 h3{
     padding-top: 10px;
@@ -35,14 +35,30 @@ h3{
             <option value="Doctor">Doctor</option>
             <option value="other" selected>Other</option>
         </select><br>
-        <label for="interest">Topics of Interest:</label>
-        <input type="checkbox" name="html" id="interest">
-        <label for="interest">HTML</label>
-         <input type="checkbox" name="css" id="interest">
-        <label for="interest">CSS</label>
-         <input type="checkbox" name="js" id="interest">
-        <label for="interest">JS</label><br>
-        <label for="ta">Comments:</label><br>
+        <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" name="html" id="html">
+<label for="html">HTML</label>
+
+<input type="checkbox" name="css" id="css">
+<label for="css">CSS</label>
+
+<input type="checkbox" name="js" id="js">
+<label for="js">JS</label><br></fieldset>
+        <br>
+        <label for="resume">Resume:</label>
+        <input type="file" name="resume" id="resume"><br>
+        <label for="exper">Experience</label>
+        <input type="number" name="exper" id="exper" min="0"><br>
+       
+        
+        <label>Availability:</label>
+<input type="radio" name="availability" id="fulltime">
+<label for="fulltime">Full Time</label>
+
+<input type="radio" name="availability" id="parttime">
+<label for="parttime">Part Time</label><br>
+<label for="ta">Comments:</label><br>
         <textarea name="ta" id="ta" rows="5" cols="30"></textarea><br>
         <input type="submit" value="submit">
     </form></div>
